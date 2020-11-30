@@ -1,0 +1,85 @@
+body{
+    padding: 100px;
+}
+.submit-area{
+    margin-top: 50px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray;
+}
+#trans{
+    display: none;
+
+}
+.deposit{
+    background-color: slateblue;
+}
+.withdraw{
+    background-color: salmon;
+}
+.balance{
+    background-color: orange;
+}
+.status{
+    margin: 0px 20px;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+/* rough code of js
+
+
+<script>
+      const loginBtn = document.getElementById("login") ;
+      loginBtn.addEventListener("click",function(){
+        const loginArea = document.getElementById("login area");
+         loginArea.style.display = "none";
+         const transAction = document.getElementById("trans");
+         transAction.style.display= "block";
+
+
+         })
+
+         const depositBtn = document.getElementById("addDeposit");
+         depositBtn.addEventListener("click",function(){
+          const depositNumber =inputNumber("DepositAmount");
+
+          span("currentDeposit",depositNumber);
+          span("currentBalance",depositNumber);
+
+          document.getElementById("DepositAmount").value = "";
+          
+          })
+           
+           const withdrawBtn = document.getElementById("addwithdraw");
+           withdrawBtn.addEventListener("click",function(){
+               const withdrawNumber =inputNumber("withdrawAmount"); 
+
+              span("currentWithdraw",withdrawNumber);
+              span("currentBalance",-1*withdrawNumber);
+              document.getElementById("withdrawAmount").value = "";
+           })
+
+          function inputNumber(id){
+           const amount = document.getElementById(id).value;
+           const amountNumber = parseFloat(amount);
+           return amountNumber;
+
+          }
+
+          function span(id,depositNumber){
+              const current = document.getElementById(id).innerText;
+              const currentNumber = parseFloat(current);
+              const totalAmount = depositNumber +  currentNumber;
+              document.getElementById(id).innerText = totalAmount;
+          }
+        
+
+         
+      </script>
+
+
+
+      */
